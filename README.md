@@ -42,6 +42,43 @@ I build **production-grade systems** that solve real problems — not just demos
 
 ---
 
+### 🧠 [AlphaMind](https://github.com/Nishchal45/alphamind) — Agentic Equity Research Platform
+**Problem solved:** Equity research is slow, hallucination-prone, and rarely backed by primary-source filings — analysts waste days on what AI can ground in seconds.
+
+- **Multi-agent system** built on **LangGraph** — planner, retriever, analyst, and critic agents collaborate to produce institutional-grade research reports
+- **Hybrid RAG** over `pgvector` — combines dense embeddings with BM25 reranking; every claim is grounded in **SEC EDGAR** filings (10-K, 10-Q, 8-K)
+- **LoRA-fine-tuned SLM** for cost-efficient inference on financial reasoning tasks (vs. raw GPT-4 calls)
+- **Backtest-validated** investment theses — outputs aren't just summaries, they're testable signals
+- FastAPI service layer with async pipelines for parallel filing ingestion
+
+`Python` `LangGraph` `pgvector` `FastAPI` `LoRA` `SEC EDGAR` `RAG`
+
+---
+
+### 📱 [SpendLense AI](https://github.com/Nishchal45/spendlense-ai) — Intelligent Receipt Scanner
+**Problem solved:** Manual expense tracking is tedious; OCR alone fails on messy real-world receipts.
+
+- Uses **GPT-4 Vision** to extract line items, totals, dates, and merchant names from any receipt photo
+- Automatic category classification and spend trend analytics
+- React Native mobile app with offline capture + async sync
+- Node.js backend with structured storage and export to CSV/PDF
+
+`GPT-4V` `React Native` `Node.js` `OCR` `PostgreSQL` `AWS S3`
+
+---
+
+### 🤖 [QueryMate AI](https://github.com/Nishchal45/querymate-ai) — Natural Language → SQL Engine
+**Problem solved:** Non-technical teams waste analyst hours translating business questions into SQL.
+
+- Converts plain English to production-safe SQL with **92% accuracy** on complex queries
+- Schema-aware context injection — handles JOINs, aggregates, CTEs, and window functions
+- FastAPI backend with query validation layer to prevent destructive operations
+- Supports PostgreSQL, MySQL; extensible to any SQL dialect
+
+`Python` `LLM` `FastAPI` `PostgreSQL` `LangChain` `React`
+
+---
+
 ### ⚡ [OrderFlow](https://github.com/Nishchal45/orderflow) — Distributed Order Processing System
 **Problem solved:** Monolithic order systems fail under high concurrency and partial failures cascade.
 
@@ -63,43 +100,6 @@ I build **production-grade systems** that solve real problems — not just demos
 - React dashboard with real-time charts, zero-polling architecture
 
 `Go` `ClickHouse` `WebSocket` `React` `Redis` `Docker`
-
----
-
-### 🤖 [QueryMate AI](https://github.com/Nishchal45/querymate-ai) — Natural Language → SQL Engine
-**Problem solved:** Non-technical teams waste analyst hours translating business questions into SQL.
-
-- Converts plain English to production-safe SQL with **92% accuracy** on complex queries
-- Schema-aware context injection — handles JOINs, aggregates, CTEs, and window functions
-- FastAPI backend with query validation layer to prevent destructive operations
-- Supports PostgreSQL, MySQL; extensible to any SQL dialect
-
-`Python` `LLM` `FastAPI` `PostgreSQL` `LangChain` `React`
-
----
-
-### 📱 [SpendLense AI](https://github.com/Nishchal45/spendlense-ai) — Intelligent Receipt Scanner
-**Problem solved:** Manual expense tracking is tedious; OCR alone fails on messy real-world receipts.
-
-- Uses **GPT-4 Vision** to extract line items, totals, dates, and merchant names from any receipt photo
-- Automatic category classification and spend trend analytics
-- React Native mobile app with offline capture + async sync
-- Node.js backend with structured storage and export to CSV/PDF
-
-`GPT-4V` `React Native` `Node.js` `OCR` `PostgreSQL` `AWS S3`
-
----
-
-### 🧠 [AlphaMind](https://github.com/Nishchal45/alphamind) — Agentic Equity Research Platform
-**Problem solved:** Equity research is slow, hallucination-prone, and rarely backed by primary-source filings — analysts waste days on what AI can ground in seconds.
-
-- **Multi-agent system** built on **LangGraph** — planner, retriever, analyst, and critic agents collaborate to produce institutional-grade research reports
-- **Hybrid RAG** over `pgvector` — combines dense embeddings with BM25 reranking; every claim is grounded in **SEC EDGAR** filings (10-K, 10-Q, 8-K)
-- **LoRA-fine-tuned SLM** for cost-efficient inference on financial reasoning tasks (vs. raw GPT-4 calls)
-- **Backtest-validated** investment theses — outputs aren't just summaries, they're testable signals
-- FastAPI service layer with async pipelines for parallel filing ingestion
-
-`Python` `LangGraph` `pgvector` `FastAPI` `LoRA` `SEC EDGAR` `RAG`
 
 ---
 
